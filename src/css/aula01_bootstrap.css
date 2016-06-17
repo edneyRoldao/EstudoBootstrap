@@ -1,0 +1,46 @@
+/* arquivo CSS aula01_bootstrap.html */
+/* working together bootstrap css */
+.cinza{
+	background: #ccc;
+	padding: 10px;
+}
+
+.verde{
+	background: green;
+	padding: 10px;
+}
+
+.azul{
+	background: blue;
+	padding: 10px;
+}
+
+.rosa{
+	background: pink;
+	padding: 10px;
+}
+
+.roxo{
+	background: purple;
+	padding: 10px;
+}
+
+.col-md-9{
+	background: black;
+	color: white;
+}
+
+.amarelo{
+	background: yellow;
+	padding: 10px;
+}
+
+.col-md-10{
+	background: black;
+	color: white;
+}
+
+.preto{
+	background: black;
+	padding: 10px;
+}

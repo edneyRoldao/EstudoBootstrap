@@ -1,0 +1,136 @@
+<!-- ARQUIVO BASE PARA O DESENVOLVIMENTO DE PÁGINAS RESPONSIVAS UTILIZANDO OS BIBLIOTETAS BOOTSTRAP E JQUERY -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags init -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in  the head; any other head content must come *after* these tags -->
+
+    <title>Breadcrumbs, Paginator and Pager</title>
+
+    <!--  CSS and JS specific for this page -->
+    <link href="../css/aula03_bootstrap.css" rel="stylesheet"/>
+
+    <!-- Bootstrap optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <!-- Header template starts-->
+    <header>
+      <div class="nav navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#example">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="https://www.facebook.com/" class="navbar-brand">Facebook</a>
+          </div>
+          <div class="collapse navbar-collapse" id="example">
+            <ul class="nav navbar-nav">
+              <li> <a href="">Link 1</a> </li>
+              <li> <a href="">Link 2</a> </li>
+            </ul>
+            <form action="" class="navbar-form navbar-right " role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search this out"/>
+              </div>
+              <button type="submit" class="btn btn-primary">Find</button>
+            </form>
+          </div>
+
+        </div>
+      </div>      
+
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Hello, I'm Edney</h1>
+          <h2>Breadcrumbs, Paginator and Pager</h2>
+        </div>
+      </div>
+    </header>
+    <!-- ends header template -->
+
+    <!-- Breadcrumbs -->
+    <h4>Example of Breadcrums</h4>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Videos</a></li>
+      </ol>
+    </div>
+
+    <!-- Pagination -->
+    <hr/>
+    <h4>Example of Paginator</h4>
+    <div class="container">
+      <ul class="pagination pagination-lg">
+        <li class="disabled"><a href="">&laquo;</a></li>
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li class="active"><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+        <li><a href="">6</a></li>
+        <li><a href="">&raquo;</a></li>
+      </ul>
+
+      <!-- Pager --> 
+      <hr/>
+      <h4>Pager</h4>
+      <ul class="pager">
+        <li><a href="">Previous One</a></li>
+        <li><a href="">Next One</a></li>
+      </ul>
+
+      <hr/>
+      <h4>Another Pager</h4>
+      <ul class="pager">
+        <li class="previous"><a href="">&larr; Previous One</a></li>
+        <li class="next"><a href="">Next One &rarr;</a></li>
+      </ul>
+    </div>
+
+    <!-- Label with text in span tag -->
+    <hr/>
+    <div class="container">
+      <h4>Label with text</h4>
+        <h1>Hi, I'm Edney <span class="label label-default">nice to meet you</span></h1>
+        <h2>Hi, I'm Edney <span class="label label-primary">nice to meet you</span></h2>
+        <h3>Hi, I'm Edney <span class="label label-success">nice to meet you</span></h3>
+        <h4>Hi, I'm Edney <span class="label label-info">nice to meet you</span></h4>
+        <h5>Hi, I'm Edney <span class="label label-warning">nice to meet you</span></h5>
+        <h6>Hi, I'm Edney <span class="label label-danger">nice to meet you</span></h6>
+    </div>
+
+    <!-- starts footer template -->
+    <footer>
+      <div>
+        <hr/>
+        <p>
+          <a href="https://www.youtube.com/">Youtube</a>
+        </p>
+        <p>
+          <a href="https://twitter.com/">Twitter</a>
+        </p>
+        <p>
+          <a href="http://getbootstrap.com/">Bootstrap</a>          
+        </p>
+      </div>
+    </footer>
+    <!-- ends footer template -->
+
+    <!-- Bootstrap and JQuery JAVASCRIPT -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../lib/jquery/js/jquery-1.11.3.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

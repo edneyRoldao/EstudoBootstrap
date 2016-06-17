@@ -1,0 +1,122 @@
+<!-- ARQUIVO BASE PARA O DESENVOLVIMENTO DE PÁGINAS RESPONSIVAS UTILIZANDO OS BIBLIOTETAS BOOTSTRAP E JQUERY -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags init -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in  the head; any other head content must come *after* these tags -->
+
+    <title>FORMS</title>
+
+    <!--  CSS and JS specific for this page -->
+    <link href="../css/aula03_bootstrap.css" rel="stylesheet"/>
+
+    <!-- Bootstrap optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <!-- Header template starts-->
+    <header>
+      <div class="jumbotron">
+        <div class="container">
+          <h2>Hello, I'm Edney and below we have some examples of form with many bootstrap styles</h2>
+          <h2>FORMS</h2>
+        </div>
+      </div>
+    </header>
+    <!-- ends header template -->
+
+    <div class="container">
+      <!-- first -->
+      <form action="" method="">
+        <div class="form-group">
+          <label for="element-1" class="control-label">This is th e text for label</label>
+          <input type="text" id="element-1" class="form-control">
+        </div>
+        <div class="form-group has-success">
+          <label for="element-2">This is th e text for label</label>
+          <input type="text" id="element-2" class="form-control">
+          <p class="help-block">Enter the password</p>
+        </div>
+      </form>
+
+      <!-- second -->
+      <hr/>
+      <form action="" method="" class="form-inline">
+        <div class="form-group has-warning has-feedback">
+          <label for="element-3" class="sr-only">This is th e text for label</label>
+          <input type="text" id="element-3" class="form-control" placeholder="Enter email">
+          <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+        </div>
+        <div class="form-group has-error has-feedback">
+          <label for="element-4" class="sr-only">This is th e text for label</label>
+          <input type="password" id="element-4" class="form-control" placeholder="Enter Password">
+          <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+        <div class="checkbox">
+          <label for="">
+            <input type="checkbox"/>
+            Remember me
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary">Sign in</button>
+      </form>
+    </div>
+
+    <!-- third -->
+    <hr/>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <input type="text" class="form-control" placeholder="2 Blocks wide">
+        </div>
+        <div class="col-lg-4">
+          <input type="text" class="form-control" placeholder="4 Blocks wide">
+        </div>
+        <div class="col-lg-6">
+          <input type="text" class="form-control" placeholder="6 Blocks wide">
+        </div>
+        <div class="col-lg-8">
+          <input type="text" class="form-control" placeholder="8 Blocks wide">
+        </div>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" placeholder="10 Blocks wide">
+        </div>
+        <div class="col-lg-12">
+          <input type="text" class="form-control" placeholder="12 Blocks wide">
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- starts footer template -->
+    <footer>
+      <div>
+        <hr/>
+        <p>
+          <a href="https://www.youtube.com/">Youtube</a>
+        </p>
+        <p>
+          <a href="https://twitter.com/">Twitter</a>
+        </p>
+        <p>
+          <a href="http://getbootstrap.com/">Bootstrap</a>          
+        </p>
+      </div>
+    </footer>
+    <!-- ends footer template -->
+
+    <!-- Bootstrap and JQuery JAVASCRIPT -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../lib/jquery/js/jquery-1.11.3.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

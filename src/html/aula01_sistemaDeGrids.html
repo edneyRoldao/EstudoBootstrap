@@ -1,0 +1,230 @@
+<!-- ARQUIVO BASE PARA O DESENVOLVIMENTO DE PÁGINAS RESPONSIVAS UTILIZANDO OS BIBLIOTETAS BOOTSTRAP E JQUERY -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags init -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in  the head; any other head content must come *after* these tags -->
+
+    <title>Grid System</title>
+
+    <!--  CSS and JS specific for this page -->
+    <link href="../css/aula01_bootstrap.css" rel="stylesheet"/>
+
+    <!-- Bootstrap optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- Header template starts-->
+    <header>
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Hello, world!</h1>
+          <h3>Container in grid System</h3>
+        </div>
+      </div>
+    </header>
+    <!-- ends header template -->
+
+
+    <!-- Content about only this page -->
+
+    <!-- Working with bootstrap CONTAINER-->
+    <div class="cinza">
+      <div class="container">
+        <div class="well">This is my first container</div>
+      </div>    
+    </div>
+
+    <!-- working with ROWS -->
+    <div class="verde">
+      <div class="container">
+          <div class="row">
+            <div class="well">This is the first row</div>
+          </div>
+          <div class="row">
+            <div class="well">This is the second row</div>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- I need explain with more details about columns schema in bootstrap:
+      
+      1 - The bootstrap can divide our web page in twelve parts
+      2 - We can define the size of columns from these twelve parts, remember: this is the limit
+      3 - For to use this schema, we need apply this css class: 
+            <div class="col-lg-12"> lg = larger column
+            <div class="col-lg-6">  md = medium column
+            <div class="col-lg-3">  sm = small  column
+            <div class="col-lg-3">  xs = extra small column
+
+            We can define more that one size column, see below
+            <div class="col-xs-6 col-md-3">
+
+      4 - At the follow example below, we have many colunms with some size  
+     -->
+
+     <!-- FIRST EXAMPLE: four columns spread on twelve parts( first:6, second:2, third:2, fourth:2) see.. 6+2+2+2 = 12 -->
+     <div class="azul">
+       <div class="container">
+         <div class="row">
+           <!-- First Column: 6 parts in 12--> 
+           <div class="col-lg-6">
+            <div class="well">First Column (6)</div>
+           </div>
+
+           <!-- Second Column: 2 parts in 12--> 
+           <div class="col-lg-2">
+            <div class="well">Second Column (6+2=8)</div>
+           </div>
+
+           <!-- Third Column: 2 parts in 12--> 
+           <div class="col-lg-2">
+            <div class="well">Third Column (8+2=10)</div>
+           </div>
+
+           <!-- Fourth Column: 2 parts in 12--> 
+           <div class="col-lg-2">
+            <div class="well">Fourth Column (10+2=12)</div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- ends the first example -->
+
+     <!-- SECOND EXAMPLE: four columns spread on twelve parts(in this example, the columns change your size from window size) 
+                          One column is the giggest than the others, this column modify the layout, it stay column very ugly  
+                          The <div class="fixLayout"> solve the problem -->
+     <div class="rosa">
+       <div class="container">
+         <div class="row">
+           <!-- First Column --> 
+           <div class="col-xs-6 col-md-3">
+            <div class="well">
+              First Column - Hello guys my name is Edney and if you like
+              my pdf tutorials please subscribe to my channel
+            </div>
+           </div>
+
+           <!-- Second Column --> 
+           <div class="col-xs-6 col-md-3">
+            <div class="well">Second Column</div>
+           </div>
+
+           <!-- See the layout and discoment the div below for to fix -->
+           <div class="clearfix hidden-md hidden-lg"></div>
+           <!-- Third Column --> 
+           <div class="col-xs-6 col-md-3">
+            <div class="well">Third Column</div>
+           </div>
+
+           <!-- Fourth Column --> 
+           <div class="col-xs-6 col-md-3">
+            <div class="well">Fourth Column</div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- ends the second example -->
+
+
+
+     <div class="roxo">
+       <div class="container">
+         <div class="row">
+           <!-- First Column --> 
+           <div class="col-sm-4">
+            <div class="well">
+              First Column - Hello guys my name is Edney and if you like
+              my pdf tutorials please subscribe to my channel
+            </div>
+           </div>
+
+           <!-- Second Column -->
+           <!-- We can change value of offset to distance column each other --> 
+           <div class="col-sm-4 col-sm-offset-4">
+            <div class="well">Second Column</div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- ends the third example -->
+
+
+     <!-- Fourth example, applying css in bootstrap class, see see external file.css -->
+     <div class="container">
+       <div class="row">
+         <div class="col-md-9">First Column</div>
+         <div class="col-md-3">Second Column</div>
+       </div>
+     </div>
+     <!-- ends the fourth example -->
+
+
+     <!-- Fifth example - nested columns -->
+     <div class="amarelo">
+      <div class="container">
+       <div class="row">
+         <div class="col-md-10">
+          First Column
+          <div class="row">
+            <div class="col-md-6">
+              <div class="well">First Column</div>
+            </div>
+            <div class="col-md-6">
+              <div class="well">Secod Column</div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+     </div>
+     <!-- ends the fifth example -->
+
+
+     <!-- Sixth example - using push and pull efect -->
+     <div class="preto">
+        <div class="container">
+         <div class="row">
+          <div class="col-sm-6 col-sm-push-6">
+            <div class="well">First Column</div>
+          </div>
+          <div class="col-sm-6 col-sm-pull-6">
+            <div class="well">Second Column</div>
+          </div>
+         </div>
+       </div>
+     </div>
+     <!-- ends the fourth example -->
+
+
+
+    <!-- starts footer template -->
+    <footer>
+      <div>
+        <hr/>
+        <p>
+          <a href="https://www.youtube.com/">Youtube</a>
+        </p>
+        <p>
+          <a href="https://twitter.com/">Twitter</a>
+        </p>
+        <p>
+          <a href="http://getbootstrap.com/">Bootstrap</a>          
+        </p>
+      </div>
+    </footer>
+    <!-- ends footer template -->
+
+    <!-- Bootstrap and JQuery JAVASCRIPT -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../lib/jquery/js/jquery-1.11.3.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

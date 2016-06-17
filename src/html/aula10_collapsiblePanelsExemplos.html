@@ -1,0 +1,136 @@
+<!-- ARQUIVO BASE PARA O DESENVOLVIMENTO DE PÁGINAS RESPONSIVAS UTILIZANDO OS BIBLIOTETAS BOOTSTRAP E JQUERY -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags init -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in  the head; any other head content must come *after* these tags -->
+
+    <title>Collapsible panels</title>
+
+    <!--  CSS and JS specific for this page -->
+    <link href="../css/aula03_bootstrap.css" rel="stylesheet"/>
+
+    <!-- Bootstrap optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <!-- Header template starts-->
+    <header>
+      <div class="nav navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#example">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="https://www.facebook.com/" class="navbar-brand">Facebook</a>
+          </div>
+          <div class="collapse navbar-collapse" id="example">
+            <ul class="nav navbar-nav">
+              <li> <a href="">Link 1</a> </li>
+              <li> <a href="">Link 2</a> </li>
+            </ul>
+            <form action="" class="navbar-form navbar-right " role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search this out"/>
+              </div>
+              <button type="submit" class="btn btn-primary">Find</button>
+            </form>
+          </div>
+
+        </div>
+      </div>      
+
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Hello, I'm Edney</h1>
+          <h2>Collapsible panels</h2>
+        </div>
+      </div>
+    </header>
+    <!-- ends header template -->
+
+    <div class="container">
+      <div class="panel-group" id="accordion">
+
+        <!-- First -->
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="#collapseOne" data-toggle="collapse" data-parent="accordion">
+                Collapse panel 1
+              </a>
+            </h4>
+          </div>
+          <div class="panel-collapse collapse in" id="collapseOne">
+            <div class="panel-body">
+              Pensando mais a longo prazo, a percepção das dificuldades faz parte de um processo de gerenciamento das diretrizes de desenvolvimento para o futuro.
+            </div>
+          </div>
+        </div>
+
+        <!-- Second -->
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="#collapseTwo" data-toggle="collapse" data-parent="accordion">
+                Collapse panel 2
+              </a>
+            </h4>
+          </div>
+          <div class="panel-collapse collapse" id="collapseTwo">
+            <div class="panel-body">
+             É importante questionar o quanto a expansão dos mercados mundiais acarreta um processo de reformulação e modernização das condições financeiras e administrativas exigidas.
+            </div>
+          </div>
+        </div>
+        
+        <!-- Third -->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="#collapseThree" data-toggle="collapse" data-parent="accordion">
+                Collapse panel 3
+              </a>
+            </h4>
+          </div>
+        </div>      
+        <div class="panel-collapse collapse" id="collapseThree">
+          <div class="panel-body">
+            Ainda assim, existem dúvidas a respeito de como a revolução dos costumes representa uma abertura para a melhoria dos paradigmas corporativos.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- starts footer template -->
+    <footer>
+      <div>
+        <hr/>
+        <p>
+          <a href="https://www.youtube.com/">Youtube</a>
+        </p>
+        <p>
+          <a href="https://twitter.com/">Twitter</a>
+        </p>
+        <p>
+          <a href="http://getbootstrap.com/">Bootstrap</a>          
+        </p>
+      </div>
+    </footer>
+    <!-- ends footer template -->
+
+    <!-- Bootstrap and JQuery JAVASCRIPT -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../lib/jquery/js/jquery-1.11.3.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
